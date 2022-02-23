@@ -1,7 +1,7 @@
 package topinterviewquestions.easy.array;
 
-/* Given an array of integers nums and an integer target, return indices
- * of the two numbers such that they add up to target.
+/* Given an array of integers nums and an integer target,
+ * return indices of the two numbers such that they add up to target.
  * You may assume that each input would have exactly one solution,
  * and you may not use the same element twice.
  * You can return the answer in any order.
@@ -29,9 +29,8 @@ class Solution {
 
         System.out.println("3rd TASK.");
         input = new int[]{3, 3};
-        target = 6;
-        output = task.twoSum(input, target);
-        task.printResults(input, output, target);
+        output = task.twoSum(input, 6);
+        task.printResults(input, output, 6);
 
         System.out.println("4th TASK.");
         input = new int[]{-1, -2, -3, -4, -5};
@@ -51,6 +50,7 @@ class Solution {
             hashMap.put(nums[i], i);
         }
 
+
 //        Two through pass
 //        for (int i = 1; i < nums.length; i++) {
 //            indices[0] = i - 1;
@@ -67,7 +67,7 @@ class Solution {
 //            System.out.println(" - Not exist.");
 //        }
 
-//        //brute force solution
+//        // brute force solution
 //        for (int i = 0; i < nums.length; i++) {
 //            for (int j = i + 1; j < nums.length; j++) {
 //                if (target == nums[i] + nums[j]) {
