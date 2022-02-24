@@ -1,4 +1,4 @@
-package topinterviewquestions.easy.array.twosum;
+package topinterviewquestions.easy.array;
 
 /* Given an array of integers nums and an integer target,
  * return indices of the two numbers such that they add up to target.
@@ -11,9 +11,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class TwoSumMain {
     public static void main(String[] args) {
-        Solution task = new Solution();
+        TwoSumMain task = new TwoSumMain();
 
         System.out.println("1st TASK.");
         int[] input = {2, 7, 11, 15};

@@ -1,4 +1,4 @@
-package topinterviewquestions.easy.array.removeduplicates;
+package topinterviewquestions.easy.array;
 
 /* Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place
  * such that each unique element appears only once. The relative order of the elements should be kept the same.
@@ -20,10 +20,10 @@ package topinterviewquestions.easy.array.removeduplicates;
 
 import java.util.Arrays;
 
-class Solution {
+class RemoveDuplicatesMain {
 
     public static void main(String[] args) {
-        Solution task = new Solution();
+        RemoveDuplicatesMain task = new RemoveDuplicatesMain();
         int[] input = new int[]{0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
         int result = task.removeDuplicates(input);
         System.out.println(result);

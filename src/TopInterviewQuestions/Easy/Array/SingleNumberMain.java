@@ -1,4 +1,4 @@
-package topinterviewquestions.easy.array.singlenumber;
+package topinterviewquestions.easy.array;
 
 /* Given a non-empty array of integers nums, every element appears twice except for one.
  * Find that single one.
@@ -11,25 +11,22 @@ package topinterviewquestions.easy.array.singlenumber;
  * Each element in the array appears twice except for one element which appears only once.
  */
 
-
 import java.util.Arrays;
 
-class Solution {
+class SingleNumberMain {
 
     public static void main(String[] args) {
-        Solution task = new Solution();
+        SingleNumberMain task = new SingleNumberMain();
         int[] input = new int[]{4, 1, 2, 1, 2};
         System.out.println(task.singleNumber(input));
         input = new int[]{2, 2, 1};
         System.out.println(task.singleNumber(input));
     }
 
-
     public int singleNumber(int[] nums) {
+        System.out.println("Input: " + Arrays.toString(nums));
         Arrays.sort(nums);
-        System.out.println(Arrays.toString(nums));
-        System.out.println(Arrays.toString(nums));
-
+        System.out.println("Output: " + Arrays.toString(nums));
         for (int i = 0; i < nums.length - 1; i += 2) {
             if (nums[i] != nums[i + 1]) {
                 return nums[i];
