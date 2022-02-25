@@ -18,20 +18,28 @@ class SingleNumberMain {
     public static void main(String[] args) {
         SingleNumberMain task = new SingleNumberMain();
         int[] input = new int[]{4, 1, 2, 1, 2};
-        System.out.println(task.singleNumber(input));
+        System.out.println("Single number: " + task.singleNumber(input));
         input = new int[]{2, 2, 1};
-        System.out.println(task.singleNumber(input));
+        System.out.println("Single number: " + task.singleNumber(input));
     }
 
     public int singleNumber(int[] nums) {
         System.out.println("Input: " + Arrays.toString(nums));
-        Arrays.sort(nums);
-        System.out.println("Output: " + Arrays.toString(nums));
-        for (int i = 0; i < nums.length - 1; i += 2) {
-            if (nums[i] != nums[i + 1]) {
-                return nums[i];
-            }
+
+        /* Simple algorithmic solution for sorted array */
+//        Arrays.sort(nums);
+//        for (int i = 0; i < nums.length - 1; i += 2) {
+//            if (nums[i] != nums[i + 1]) {
+//                return nums[i];
+//            }
+//        }
+//        return nums[nums.length - 1];
+
+        /* Solution with XOR */
+        int result = 0;
+        for (int num : nums) {
+            result ^= num;
         }
-        return nums[nums.length - 1];
+        return result;
     }
 }
