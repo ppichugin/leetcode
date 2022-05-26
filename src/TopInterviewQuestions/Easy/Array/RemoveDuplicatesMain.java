@@ -13,7 +13,7 @@ package topinterviewquestions.easy.array;
  * You must do this by modifying the input array in-place with O(1) extra memory.
  *
  * Constraints:
- * 1 <= nums.length <= 3 * 104
+ * 1 <= nums.length <= 3 * 10^4
  * -100 <= nums[i] <= 100
  * nums is sorted in non-decreasing order.
  */

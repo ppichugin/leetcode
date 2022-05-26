@@ -1,5 +1,14 @@
 package topinterviewquestions.easy.array;
 
+/*
+ * Given an array, rotate the array to the right by k steps, where k is non-negative.
+ *
+ * Constraints:
+ * 1 <= nums.length <= 10^5
+ * -2^31 <= nums[i] <= 2^31 - 1
+ * 0 <= k <= 10^5
+ */
+
 import java.util.Arrays;
 
 public class RotateArrayMain {
